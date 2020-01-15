@@ -1,0 +1,19 @@
+name: Send Ding
+description: Send ding to multiple recipients
+author: harryzjm
+branding:
+  icon: code
+  color: red
+inputs:
+  access_token:
+    description: access_token
+    required: true
+  title:
+    description: title
+    required: true
+  content:
+    description: content
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
